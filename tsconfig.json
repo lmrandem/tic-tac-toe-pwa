@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": ["DOM", "ES6", "WebWorker"],
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/*.ts", "src/assets.d.ts"],
+  "exclude": ["node_module/**/*"]
+}

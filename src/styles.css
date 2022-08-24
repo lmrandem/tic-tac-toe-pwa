@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background-color: #2b52ae;
+  background-image: linear-gradient(to bottom right, #2b52ae, #1e1c9b 70%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 3em auto auto;
+  justify-items: center;
+  gap: 1em;
+}
+
+.title {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.status-text {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.player-img {
+  width: 2em;
+}
+
+.board {
+  width: 100%;
+  max-width: 15em;
+  height: 15em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.2em;
+}
+
+.field {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b0959;
+  box-shadow: 0em 0em 1em #2b52ae; /* #060441 */
+  border-radius: 1em;
+  border: none;
+}
+
+.field:not(:disabled) {
+  cursor: pointer;
+}
+
+.field:not(:disabled):hover {
+  background-color: #060441;
+}
+
+.symbol {
+  width: 90%;
+  height: 90%;
+}
+
+.btn {
+  border: none;
+  color: #812909;
+  background-color: #edf05c;
+  background-image: linear-gradient(to bottom right, #edf05c, #e6ce1a 70%);
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to bottom right, #edf05c, #f2f46b 70%);
+  box-shadow: 0em 0em 0.5em #e6ce1a;
+}
+
+@media only screen and (min-width: 20em) {
+  .board {
+    max-width: 18em;
+    height: 18em;
+  }
+}
+
+@media only screen and (min-width: 30em) {
+  .board {
+    max-width: 28em;
+    height: 28em;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .board {
+    max-width: 30em;
+    height: 30em;
+  }
+}
